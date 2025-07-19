@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "mib_services_online_backend": {
+      "candid": "src/mib_services_online_backend/mib_services_online_backend.did",
+      "package": "mib_services_online_backend",
+      "type": "rust"
+    },
+    "mib_services_online_frontend": {
+      "dependencies": [
+        "mib_services_online_backend"
+      ],
+      "source": [
+        "src/mib_services_online_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "mib_services_online_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
